@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Khinkali Factory</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+
+<body>
+    <header>
+        <h1>Make a Reservation</h1>
+    </header>
+
+    <main>
+        <section class="reservation-form">
+            <form id="reservation-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <span id="name-error" class="error-message"></span><br><br>
+
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" required><br>
+                <span id="date-error" class="error-message"></span><br><br>
+
+                <label for="time">Time:</label><br>
+                <input type="time" id="time" name="time" required><br>
+                <span id="time-error" class="error-message"></span><br><br>
+
+                <label for="persons">Number of Persons:</label><br>
+                <input type="number" id="persons" name="persons" required><br>
+                <span id="persons-error" class="error-message"></span><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <span id="phone-error" class="error-message"></span><br><br>
+
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Khinkali Factory. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="cookie-notification" class="cookie-notification">
+        <p>This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn more</a></p>
+        <button id="accept-cookies">Accept</button>
+      </div>
+</body>
+
+</html>

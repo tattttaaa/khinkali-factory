@@ -1,0 +1,339 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ff7f50;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #ff6347;
+  }
+  
+  header h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  header .navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 2px solid #ff6347;
+  }
+  
+  header .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  header .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 5px 15px;
+    border-radius: 50px;
+  }
+  
+  header .navbar ul li a:hover {
+    color: #ff6347;
+    background-color: white;
+  }
+  
+  /* Main section (Landing page) */
+  .main-section {
+    background-image: url('images/background.jpg'); /* Make sure path is correct */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+    border-bottom: 5px solid #ff6347;
+  }
+  
+  .main-section h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+  }
+  
+  /* About Us (updated with locations) */
+  .about-us {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid #f4f4f4;
+  }
+  
+  .about-us h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #ff6347;
+  }
+  
+  .locations {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .locations div {
+    width: 30%;
+    background-color: #ff7f50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .locations div:hover {
+    transform: translateY(-10px);
+  }
+  
+  .locations h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .locations p {
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  
+  .locations img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 120px; /* Resize location images */
+  }
+  
+  /* Menu page */
+  .menu {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .menu h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #ff6347;
+  }
+  
+  .menu .item {
+    display: flex;
+    justify-content: space-between; /* Or flex-start, center, etc. */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+  }
+  
+  .menu .item h3 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px; /* Add some space between title and image */
+  }
+  
+  .menu .item p {
+    color: #777;
+    font-size: 1.1rem;
+    flex-grow: 1; /* Allow description to take up available space */
+  }
+  
+  .menu .item img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Add some rounded corners */
+  }
+  
+  /* Reservation form */
+  .reservation {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+  }
+  
+  .reservation h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #ff6347;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f4f4f4;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .form-container input,
+  .form-container select,
+  .form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-container button {
+    background-color: #ff7f50;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+  }
+  
+  /* Contact page */
+  .contact {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-top: 5px solid #f4f4f4;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #ff6347;
+  }
+  
+  .contact p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  .contact img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* Adjust spacing between images if needed */
+}
+
+  /* Social Media Section */
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  .social-media h3 {
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+  }
+  
+  .social-media a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  .social-media img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+/* In your styles.css */
+.cookie-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: opacity 0.3s ease; /* Add a smooth transition */
+  }
+  
+  .cookie-notification p {
+    margin-right: 20px;
+  }
+  
+  .cookie-notification a {
+    color: lightblue;
+    text-decoration: none;
+  }
+  
+  .cookie-notification button {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cookie-notification button:hover {
+    background-color: #ff6347;
+  }
+  
+  .cookie-notification.hidden {
+    opacity: 0; /* Smoothly hide the notification */
+    pointer-events: none; /* Prevent interaction when hidden */
+  }
+  
+  @media (max-width: 768px) { /* Adjust for smaller screens */
+    .cookie-notification {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      text-align: center;
+    }
+    .cookie-notification p {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }

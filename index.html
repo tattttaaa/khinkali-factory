@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khinkali Factory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Khinkali Factory</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section (Landing Page) -->
+  <section class="main-section">
+    <h2>Welcome to Khinkali Factory</h2>
+    <!-- Add a picture here (background image) -->
+    <div class="background-image" style="background-image: url('background.jpg');"></div>
+    <p>Your favorite place for delicious Khinkali!</p>
+  </section>
+
+  <!-- About Us (Locations) -->
+  <section class="about-us">
+    <h2>Our Locations</h2>
+    <div class="locations">
+      <!-- Location 1: Pkhovi Street -->
+      <div>
+        <h3>Pkhovi Street</h3>
+        <!-- Add image for Pkhovi street -->
+        <img src="images/pkhovi.jpg" alt="Pkhovi Street" />
+        <p>Address: Pkhovi Street, Tbilisi</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+
+      <!-- Location 2: Pushkini Street -->
+      <div>
+        <h3>Pushkini Street</h3>
+        <!-- Add image for Pushkini street -->
+        <img src="images/pushkini.jpg" alt="Pushkini Street" />
+        <p>Address: Pushkini Street, Tbilisi</p>
+        <p>Phone: 123-456-7891</p>
+      </div>
+
+      <!-- Location 3: Vake -->
+      <div>
+        <h3>Vake</h3>
+        <!-- Add image for Vake location -->
+        <img src="images/vake.jpg" alt="Vake" />
+        <p>Address: Vake, Tbilisi</p>
+        <p>Phone: 123-456-7892</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Page -->
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <div class="item">
+      <h3>Khinkali with Meat</h3>
+      <p>Choose from beef & pork, beef, pork, or beef & lamb.</p>
+      <!-- Add image for Khinkali -->
+      <img src="images/186511820_958061964735729_6469730393001629080_n.jpg" alt="Khinkali with Meat" />
+    </div>
+    <div class="item">
+      <h3>Vegan Khinkali</h3>
+      <p>Vegan-friendly option with potatoes and mushrooms.</p>
+      <!-- Add image for Vegan Khinkali -->
+      <img src="images/vegan.jpg" alt="Vegan Khinkali" />
+    </div>
+    <div class="item">
+      <h3>Salads</h3>
+      <p>Tuna Salad, Caesar Salad, Georgian Salad.</p>
+      <!-- Add image for Salad -->
+      <img src="images/salads.jpg" alt="Salad" />
+    </div>
+    <div class="item">
+      <h3>Soups</h3>
+      <p>Mushroom Cream Soup, Pumpkin Cream Soup, Spicy Coconut Soup with Chicken.</p>
+      <!-- Add image for Soup -->
+      <img src="images/soups.jpg" alt="Soup" />
+    </div>
+    <div class="item">
+      <h3>Drinks</h3>
+      <p>Draft Beer (IPA, Dark, White), Wines, Cocktails.</p>
+      <!-- Add image for Drinks -->
+      <img src="images/drinks.jpg" alt="Drinks" />
+    </div>
+  </section>
+
+  <!-- Reservation Form -->
+  <section class="reservation">
+    <h2>Reserve Your Table</h2>
+    <div class="form-container">
+      <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="persons">Number of Persons</label>
+        <input type="number" id="persons" name="persons" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Reserve</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Page -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries or more information, feel free to reach us at the following locations or call our customer support.</p>
+    <!-- Add image for contact -->
+    <img src="images/instagram-logo-instagram-icon-transparent-free-png.webp" alt="Contact Us" />
+    <img src="images/Facebook-f_Logo-Blue-Logo.wine.svg" alt="Contact Us" />
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Khinkali Factory. All Rights Reserved.</p>
+  </footer>
+  <div id="cookie-notification" class="cookie-notification">
+    <p>This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn more</a></p>
+    <button id="accept-cookies">Accept</button>
+  </div>
+</body>
+</html>
