@@ -7,10 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
     header {
       text-align: center;
       background-color: #f2f2f2;
@@ -21,6 +23,94 @@
       font-weight: 700;
       margin: 0;
     }
+    .cookie-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cookie-notification a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.cookie-notification button {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.contact {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #842c03;
+}
+
+.social-media {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-media h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #842c03;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+.social-icon:hover {
+  color: #ff5c5c;
+}
     .contact-info {
       padding: 50px 20px;
       text-align: center;
@@ -50,14 +140,37 @@
       color: white;
       text-align: center;
       padding: 20px;
+      
     }
+    .back-to-main-btn {
+  position: fixed;
+  top: 10px; 
+  left: 10px; 
+  background-color: #842c03;
+  color: white;
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1000; 
+}
+
+.back-to-main-btn:hover {
+  background-color: #6e2202; 
+}
+
   </style>
 </head>
 <body>
   <header>
-    <h1>Contact Us</h1>
+    <h1>Contact And Rate Us</h1>
   </header>
-
+  <a href="index.html">
+    <button class="back-to-main-btn">
+      Back to Main Page
+    </button>
+  </a>
   <section class="contact-info">
     <p><strong>Phone:</strong> +995 123 456 789</p>
     <p><strong>Email:</strong> info@khinkalifactory.com</p>
@@ -76,55 +189,29 @@
   <footer>
     <p>&copy; 2025 Khinkali Factory. All rights reserved.</p>
   </footer>
-  <div id="cookie-notification" class="cookie-notification">
-    <p>This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn more</a></p>
-    <button id="accept-cookies">Accept</button>
-  </div>
-</body>
-</html>
 
-<!-- Contact Page -->
+<div id="cookie-notification" class="cookie-notification">
+  <p>This website uses cookies to ensure you get the best experience on our website. 
+    <a href="#">Learn more</a>
+  </p>
+  <button id="accept-cookies">Accept</button>
+</div>
+
 <section class="contact">
     <h2>Contact Us</h2>
     <p>For inquiries or more information, feel free to reach us at the following locations or call our customer support.</p>
-    
-    <!-- Social Media Links -->
-    <div class="social-media">
-      <h3>Follow Us:</h3>
-      <a href="https://www.facebook.com/hinkalifactory" target="_blank">
-        <img src="images/2021_Facebook_icon.svg.webp" alt="Facebook" />
-        Facebook
-      </a>
-      <a href="https://www.instagram.com/hinkalifactory/?hl=en" target="_blank">
-        <img src="images/instagram-logo-instagram-icon-transparent-free-png.webp" alt="Instagram" />
-        Instagram
-      </a>
-    </div>
-  
-    <!-- Location Images and Contact Information -->
-    <div class="locations">
-      <!-- Location 1: Pkhovi Street -->
-      <div>
-        <h3>Pkhovi Street</h3>
-        <img src="images/pkhovi.jpg" alt="Pkhovi Street" />
-        <p>https://g.co/kgs/GrMdnSR</p>
-        <p>Phone: 123-456-7890</p>
-      </div>
-  
-      <!-- Location 2: Pushkini Street -->
-      <div>
-        <h3>Pushkini Street</h3>
-        <img src="images/pushkini.jpg" alt="Pushkini Street" />
-        <p>Address: Pushkini Street, Tbilisi</p>
-        <p>Phone: 123-456-7891</p>
-      </div>
-  
-      <!-- Location 3: Vake -->
-      <div>
-        <h3>Vake</h3>
-        <img src="images/vake.jpg" alt="Vake" />
-        <p>https://g.co/kgs/QHy3GJw</p>
-        <p>Phone: 123-456-7892</p>
-      </div>
-    </div>
-  </section>
+</section>
+
+<div class="social-media">
+  <h3>Follow Us:</h3>
+  <div class="social-links">
+    <a href="https://www.facebook.com/hinkalifactory" target="_blank" class="social-icon">
+      <img src="images/vecteezy_facebook-logo-png-facebook-icon-transparent-png_18930698.png" alt="Facebook" />
+      Facebook
+    </a>
+    <a href="https://www.instagram.com/hinkalifactory/?hl=en" target="_blank" class="social-icon">
+      <img src="images/vecteezy_instagram-3d-illustration_13212099.png" alt="Instagram" />
+      Instagram
+    </a>
+  </div>
+</div>

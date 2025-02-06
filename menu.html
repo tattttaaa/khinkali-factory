@@ -10,6 +10,7 @@
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
     }
     header {
       text-align: center;
@@ -28,15 +29,43 @@
       text-align: center;
       font-size: 2rem;
       margin-bottom: 20px;
+      color: #333;
     }
-    .menu-items ul {
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .menu-category {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .menu-category:hover {
+      transform: scale(1.05);
+    }
+    .menu-category h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    .menu-category ul {
       list-style-type: none;
       padding: 0;
     }
-    .menu-items li {
-      font-size: 1.2rem;
-      padding: 10px 0;
+    .menu-category li {
+      font-size: 1.1rem;
+      padding: 8px 0;
+      color: #555;
       border-bottom: 1px solid #ddd;
+    }
+    .menu-category li:last-child {
+      border-bottom: none;
     }
     footer {
       background-color: #333;
@@ -44,6 +73,42 @@
       text-align: center;
       padding: 20px;
     }
+    .cookie-notification {
+      background-color: #333;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+    }
+    .cookie-notification button {
+      background-color: #f2f2f2;
+      border: none;
+      padding: 10px 20px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .cookie-notification button:hover {
+      background-color: #ddd;
+    }
+    .back-to-main-btn {
+  position: fixed;
+  top: 10px; 
+  left: 10px; 
+  background-color: #842c03;
+  color: white;
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1000; 
+}
+
+.back-to-main-btn:hover {
+  background-color: #6e2202; 
+}
   </style>
 </head>
 <body>
@@ -51,24 +116,105 @@
     <h1>Khinkali Factory Menu</h1>
   </header>
 
-  <!-- Menu Items -->
+  <a href="index.html">
+    <button class="back-to-main-btn">
+      Back to Main Page
+    </button>
+  </a>
+
   <section class="menu-items">
     <h2>Our Menu</h2>
-    <ul>
-      <li><strong>Khinkali:</strong> Vegan, Vegetarian, Meat (Beef and Pork, Beef, Pork, Beef and Lamb), Cheese, Mushrooms, Potatoes</li>
-      <li><strong>Salads:</strong> Tuna Salad, Caesar Salad, Georgian Salad</li>
-      <li><strong>Soups:</strong> Mushroom Cream Soup, Pumpkin Cream Soup, Spicy Coconut Soup with Chicken, Georgian Beef Soup Kharcho</li>
-      <li><strong>Main Dishes:</strong> Shkmeruli, Georgian Khachapuri</li>
-      <li><strong>Drinks:</strong> IPA Beer, Dark Beer, White Beer, Red and White Wines, Pina Colada, Long Island, Aperol Spritz, Cognac, Chacha</li>
-      <li><strong>Coffee & Tea:</strong> Espresso, Cappuccino, Latte, Green Tea, Black Tea</li>
-      <li><strong>Cold Drinks:</strong> Lemonade, Cola, Fanta, Sprite, Still and Sparkling Water, Iced Tea</li>
-      <li><strong>Sauces:</strong> (Please specify the sauces you offer)</li>
-    </ul>
+    <div class="menu-container">
+      <div class="menu-category">
+        <h3>Khinkali</h3>
+        <ul>
+          <li>Meat (Beef and Pork, Beef, Pork, Beef and Lamb) - 2.00 ₾</li>
+          <li>Cheese - 1.70 ₾</li>
+          <li>Mushrooms - 1.50 ₾</li>
+          <li>Potatoes - 1.40 ₾</li>
+        </ul>
+      </div>
+      
+      <div class="menu-category">
+        <h3>Salads</h3>
+        <ul>
+          <li>Tuna Salad - 21.00 ₾</li>
+          <li>Caesar Salad - 29.00 ₾</li>
+          <li>Georgian Salad - 15.50 ₾</li>
+        </ul>
+      </div>
+      
+      <div class="menu-category">
+        <h3>Soups</h3>
+        <ul>
+          <li>Mushroom Cream Soup - 17.00 ₾</li>
+          <li>Pumpkin Cream Soup - 16.00 ₾</li>
+          <li>Spicy Coconut Soup with Chicken - 26.00 ₾</li>
+          <li>Georgian Beef Soup Kharcho - 18.50 ₾</li>
+        </ul>
+      </div>
+      
+      <div class="menu-category">
+        <h3>Main Dishes</h3>
+        <ul>
+          <li>Shkmeruli - 38.00 ₾</li>
+          <li> Khachapuri - 26.00 ₾</li>
+        </ul>
+      </div>
+      
+      <div class="menu-category">
+        <h3>Drinks</h3>
+        <ul>
+          <li>IPA Beer - 8.50 ₾</li>
+          <li>Dark Beer - 7.50 ₾</li>
+          <li>White Beer - 8.00 ₾</li>
+          <li>Red and White Wines</li>
+          <li>Pina Colada - 20 ₾</li>
+          <li>Long Island - 23 ₾</li>
+          <li>Aperol Spritz - 20 ₾</li>
+          <li>Cognac</li>
+          <li>Chacha</li>
+        </ul>
+      </div>
+      
+      <div class="menu-category">
+        <h3>Coffee & Tea</h3>
+        <ul>
+          <li>Espresso - 6.00 ₾</li>
+          <li>Cappuccino - 8.00 ₾</li>
+          <li>Latte - 10.00 ₾</li>
+          <li>Green Tea - 5.00/10.00 ₾</li>
+          <li>Black Tea - 5.00/10.00 ₾</li>
+        </ul>
+      </div>
+      
+      <div class="menu-category">
+        <h3>Cold Drinks</h3>
+        <ul>
+          <li>Lemonade - 4.00/9.00 ₾</li>
+          <li>Cola - 4.80 ₾</li>
+          <li>Fanta - 4.80 ₾</li>
+          <li>Sprite - 4.80 ₾</li>
+          <li>Still and Sparkling Water - 4.00 ₾</li>
+          <li>Iced Tea - 12 ₾</li>
+        </ul>
+      </div>
+      
+      <div class="menu-category">
+        <h3>Sauces</h3>
+        <ul>
+          <li>tkemali - 4.00 ₾</li>
+          <li>sacebeli - 4.00 ₾</li>
+          <li>bbq - 4.50 ₾</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Khinkali Factory. All rights reserved.</p>
   </footer>
+
   <div id="cookie-notification" class="cookie-notification">
     <p>This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn more</a></p>
     <button id="accept-cookies">Accept</button>

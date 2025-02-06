@@ -1,11 +1,10 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Body styling */
+
   body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -13,7 +12,7 @@
     color: #333;
   }
   
-  /* Header */
+
   header {
     background-color: #ff7f50;
     color: white;
@@ -59,9 +58,9 @@
     background-color: white;
   }
   
-  /* Main section (Landing page) */
+
   .main-section {
-    background-image: url('images/background.jpg'); /* Make sure path is correct */
+    background-image: url('images/background.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
@@ -76,8 +75,21 @@
     margin-bottom: 20px;
     letter-spacing: 5px;
   }
-  
-  /* About Us (updated with locations) */
+
+.back-to-main-btn {
+  position: fixed;
+  top: 10px; 
+  left: 10px; 
+  background-color: #842c03; 
+  color: white;
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 5px;
+  font-size: 14px; 
+  cursor: pointer;
+  z-index: 1000; 
+}
+
   .about-us {
     background-color: #ffffff;
     padding: 60px 20px;
@@ -125,10 +137,10 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    max-width: 120px; /* Resize location images */
+    max-width: 120px; 
   }
-  
-  /* Menu page */
+
+
   .menu {
     padding: 60px 20px;
     background-color: #fff;
@@ -144,8 +156,8 @@
   
   .menu .item {
     display: flex;
-    justify-content: space-between; /* Or flex-start, center, etc. */
-    align-items: center; /* Vertically align items */
+    justify-content: space-between; 
+    align-items: center; 
     margin-bottom: 30px;
     border-bottom: 2px solid #f4f4f4;
     padding-bottom: 10px;
@@ -155,23 +167,22 @@
     font-size: 2rem;
     color: #333;
     font-weight: bold;
-    margin-right: 20px; /* Add some space between title and image */
+    margin-right: 20px; 
   }
   
   .menu .item p {
     color: #777;
     font-size: 1.1rem;
-    flex-grow: 1; /* Allow description to take up available space */
+    flex-grow: 1; 
   }
   
   .menu .item img {
     width: 150px;
     height: auto;
     object-fit: cover;
-    border-radius: 8px; /* Add some rounded corners */
+    border-radius: 8px; 
   }
   
-  /* Reservation form */
   .reservation {
     background-color: #f8f8f8;
     padding: 60px 20px;
@@ -223,66 +234,42 @@
     background-color: #ff6347;
     transform: scale(1.05);
   }
-  
-  /* Contact page */
-  .contact {
-    padding: 60px 20px;
-    background-color: #ffffff;
-    border-top: 5px solid #f4f4f4;
-  }
-  
   .contact h2 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-family: 'Poppins', sans-serif;
     color: #ff6347;
-  }
-  
-  .contact p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #666;
-  }
-  .contact img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px; /* Adjust spacing between images if needed */
-}
 
-  /* Social Media Section */
+  }
   .social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
+    text-align: center;
+    padding: 30px 0;
   }
   
   .social-media h3 {
-    font-size: 2rem;
-    color: #ff6347;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
   }
   
   .social-media a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    margin: 0 15px;
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
-    margin: 5px 0;
+    font-weight: 600;
+    transition: color 0.3s ease;
   }
   
-  .social-media img {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
+  .social-media a:hover {
+    color: #ff6a00;
   }
-/* In your styles.css */
+  
+
 .cookie-notification {
     position: fixed;
     bottom: 20px;
@@ -295,7 +282,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: opacity 0.3s ease; /* Add a smooth transition */
+    transition: opacity 0.3s ease; 
   }
   
   .cookie-notification p {
@@ -322,13 +309,13 @@
   }
   
   .cookie-notification.hidden {
-    opacity: 0; /* Smoothly hide the notification */
-    pointer-events: none; /* Prevent interaction when hidden */
+    opacity: 0; 
+    pointer-events: none; 
   }
   
-  @media (max-width: 768px) { /* Adjust for smaller screens */
+  @media (max-width: 768px) { 
     .cookie-notification {
-      flex-direction: column; /* Stack elements vertically */
+      flex-direction: column; 
       align-items: center;
       text-align: center;
     }
@@ -337,3 +324,113 @@
       margin-bottom: 10px;
     }
   }
+
+.contact img, .social-media {
+  width: 50px !important; 
+  height: 50px !important; 
+  margin: 10px 15px; 
+  display: inline-block; 
+  margin-bottom: 40px;
+}
+#reviews {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#review-form {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#review-form input,
+#review-form select,
+#review-form textarea,
+#review-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#review-form button {
+  background-color: #ff5c5c;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#reviews-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.review {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.review p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.social-media {
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-media h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #842c03;
+}
+
+.social-links {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+.social-icon:hover {
+  color: #ff5c5c;
+}
+
+
+

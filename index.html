@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <h1>Khinkali Factory</h1>
     <nav class="navbar">
@@ -21,40 +20,34 @@
     </nav>
   </header>
 
-  <!-- Main Section (Landing Page) -->
   <section class="main-section">
     <h2>Welcome to Khinkali Factory</h2>
-    <!-- Add a picture here (background image) -->
     <div class="background-image" style="background-image: url('background.jpg');"></div>
     <p>Your favorite place for delicious Khinkali!</p>
   </section>
 
-  <!-- About Us (Locations) -->
   <section class="about-us">
     <h2>Our Locations</h2>
     <div class="locations">
-      <!-- Location 1: Pkhovi Street -->
       <div>
         <h3>Pkhovi Street</h3>
-        <!-- Add image for Pkhovi street -->
         <img src="images/pkhovi.jpg" alt="Pkhovi Street" />
         <p>Address: Pkhovi Street, Tbilisi</p>
         <p>Phone: 123-456-7890</p>
+        <a href="https://g.co/kgs/cQDXogW" target="_blank"></a>
       </div>
+      
 
-      <!-- Location 2: Pushkini Street -->
       <div>
         <h3>Pushkini Street</h3>
-        <!-- Add image for Pushkini street -->
         <img src="images/pushkini.jpg" alt="Pushkini Street" />
         <p>Address: Pushkini Street, Tbilisi</p>
         <p>Phone: 123-456-7891</p>
       </div>
+      
 
-      <!-- Location 3: Vake -->
       <div>
         <h3>Vake</h3>
-        <!-- Add image for Vake location -->
         <img src="images/vake.jpg" alt="Vake" />
         <p>Address: Vake, Tbilisi</p>
         <p>Phone: 123-456-7892</p>
@@ -62,42 +55,35 @@
     </div>
   </section>
 
-  <!-- Menu Page -->
   <section class="menu">
     <h2>Our Menu</h2>
     <div class="item">
       <h3>Khinkali with Meat</h3>
       <p>Choose from beef & pork, beef, pork, or beef & lamb.</p>
-      <!-- Add image for Khinkali -->
       <img src="images/186511820_958061964735729_6469730393001629080_n.jpg" alt="Khinkali with Meat" />
     </div>
     <div class="item">
       <h3>Vegan Khinkali</h3>
       <p>Vegan-friendly option with potatoes and mushrooms.</p>
-      <!-- Add image for Vegan Khinkali -->
       <img src="images/vegan.jpg" alt="Vegan Khinkali" />
     </div>
     <div class="item">
       <h3>Salads</h3>
       <p>Tuna Salad, Caesar Salad, Georgian Salad.</p>
-      <!-- Add image for Salad -->
       <img src="images/salads.jpg" alt="Salad" />
     </div>
     <div class="item">
       <h3>Soups</h3>
       <p>Mushroom Cream Soup, Pumpkin Cream Soup, Spicy Coconut Soup with Chicken.</p>
-      <!-- Add image for Soup -->
       <img src="images/soups.jpg" alt="Soup" />
     </div>
     <div class="item">
       <h3>Drinks</h3>
       <p>Draft Beer (IPA, Dark, White), Wines, Cocktails.</p>
-      <!-- Add image for Drinks -->
       <img src="images/drinks.jpg" alt="Drinks" />
     </div>
   </section>
 
-  <!-- Reservation Form -->
   <section class="reservation">
     <h2>Reserve Your Table</h2>
     <div class="form-container">
@@ -122,16 +108,41 @@
     </div>
   </section>
 
-  <!-- Contact Page -->
+
   <section class="contact">
     <h2>Contact Us</h2>
     <p>For inquiries or more information, feel free to reach us at the following locations or call our customer support.</p>
-    <!-- Add image for contact -->
-    <img src="images/instagram-logo-instagram-icon-transparent-free-png.webp" alt="Contact Us" />
-    <img src="images/Facebook-f_Logo-Blue-Logo.wine.svg" alt="Contact Us" />
-  </section>
+    <h3>Follow Us:</h3>
+    <div class="social-links">
+      <a href="https://www.facebook.com/hinkalifactory" target="_blank" class="social-icon">
+        <img src="images/vecteezy_facebook-logo-png-facebook-icon-transparent-png_18930698.png" alt="Facebook" />
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/hinkalifactory/?hl=en" target="_blank" class="social-icon">
+        <img src="images/vecteezy_instagram-3d-illustration_13212099.png" alt="Instagram" />
+        Instagram
+      </a>
+    </div>
+      
+      <section id="reviews">
+        <h2>Customer Reviews</h2>
+        
+        <form id="review-form">
+          <input type="text" id="review-name" placeholder="Your Name" required>
+          <select id="review-rating">
+            <option value="1">⭐ 1</option>
+            <option value="2">⭐ 2</option>
+            <option value="3">⭐ 3</option>
+            <option value="4">⭐ 4</option>
+            <option value="5" selected>⭐ 5</option>
+          </select>
+          <textarea id="review-message" placeholder="Your Review" required></textarea>
+          <button type="submit">Submit Review</button>
+        </form>
+      
+        <div id="reviews-container"></div>
+      </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Khinkali Factory. All Rights Reserved.</p>
   </footer>
@@ -141,3 +152,4 @@
   </div>
 </body>
 </html>
+
